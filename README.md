@@ -7,13 +7,11 @@ O projeto inclui autenticação, páginas organizadas por categoria, painel (das
 
 ## 🚀 Tecnologias Utilizadas
 
-- PHP 8+
-- MySQL
-- HTML5 / CSS3
-- Bootstrap
-- JavaScript
-- XAMPP / WAMP / Laragon
-
+- **PHP**
+- **HTML5**
+- **CSS3**
+- **MySQL**
+- Servidor local: **XAMPP / WAMP / Laragon**
 ---
 
 ## 📌 Funcionalidades
