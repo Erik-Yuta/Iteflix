@@ -1,59 +1,88 @@
-# Iteflix
+# 🎬 Iteflix — Plataforma de Catálogo de Filmes, Séries e Esportes
 
-O Iteflix é um sistema simples desenvolvido em PHP, usando um banco de dados MySQL.  
-O projeto contém a pasta principal do sistema (Iteflix) e o arquivo de banco de dados (iteflix.sql).
+O **Iteflix** é um sistema web desenvolvido como trabalho acadêmico, simulando uma plataforma de catálogo de filmes, séries, conteúdo esportivo e páginas de itens populares.  
+O projeto inclui autenticação, páginas organizadas por categoria, painel (dashboard) e integração com banco de dados MySQL.
 
-------------------------------------------------------------
+---
 
-## Estrutura do Projeto
+## 🚀 Tecnologias Utilizadas
 
-Iteflix/
-- Iteflix/        -> Arquivos principais do sistema
-- iteflix.sql     -> Banco de dados MySQL
-
-------------------------------------------------------------
-
-## Como Executar o Projeto
-
-1. Clone o repositório:
-   git clone https://github.com/Erik-Yuta/Iteflix.git
-
-2. Entre na pasta do projeto:
-   cd Iteflix
-
-3. Crie um banco de dados no MySQL (exemplo: iteflix_db)
-
-4. Importe o arquivo SQL:
-   mysql -u SEU_USUARIO -p iteflix_db < iteflix.sql
-
-5. Configure a conexão com o banco no arquivo de configuração do sistema:
-   host: localhost
-   usuário: root
-   senha: (deixe vazio se usar XAMPP)
-   banco: iteflix_db
-
-6. Coloque o projeto no servidor local (XAMPP, WAMP ou Laragon)
-
-7. Acesse no navegador:
-   http://localhost/Iteflix/Iteflix/
-
-------------------------------------------------------------
-
-## Tecnologias Usadas
-
-- PHP
+- PHP 8+
 - MySQL
-- HTML
-- CSS
+- HTML5 / CSS3
+- Bootstrap
+- JavaScript
+- XAMPP / WAMP / Laragon
 
-------------------------------------------------------------
+---
 
-## Possíveis Melhorias Futuras
+## 📌 Funcionalidades
 
-- Sistema de login
-- Painel administrativo
-- Layout responsivo
-- Organização em MVC
-- Mais validações e segurança
+✔️ Sistema de Login  
+✔️ Dashboard do usuário  
+✔️ Catálogo dividido por categorias:  
+   - 🎥 Filmes  
+   - 📺 Séries  
+   - ⚽ Esportes  
+   - ⭐ Populares  
+✔️ Controle de sessão  
+✔️ Banco de dados incluso (iteflix.sql)
 
-------------------------------------------------------------
+---
+
+## 📁 Estrutura do Projeto
+
+```
+Iteflix/
+│
+├── Seguranca/         # Arquivos de segurança e validação de login
+├── filmes/            # Conteúdo de filmes
+├── series/            # Conteúdo de séries
+├── esportes/          # Conteúdos esportivos
+├── populares/         # Itens populares
+│
+├── dashboard.php      # Painel do usuário
+├── dashboard.css      # Estilos do dashboard
+├── index.php          # Página inicial
+├── login.php          # Tela de login
+├── conexao.php        # Conexão com o MySQL
+│
+├── iteflix.sql        # Banco de dados
+└── README.md
+```
+
+---
+
+## 🛠️ Como Rodar o Projeto Localmente
+
+### 1️⃣ Clonar o repositório
+```bash
+git clone https://github.com/Erik-Yuta/Iteflix.git
+```
+
+### 2️⃣ Mover para o servidor local (XAMPP)
+```
+C:/xampp/htdocs/Iteflix
+```
+
+### 3️⃣ Importar o banco
+- Acesse o phpMyAdmin  
+- Crie um banco chamado **iteflix**  
+- Importe o arquivo **iteflix.sql**
+
+### 4️⃣ Executar no navegador
+```
+http://localhost/Iteflix
+```
+
+---
+
+## 🎯 Objetivo do Projeto
+
+Projeto desenvolvido para fins acadêmicos, com foco em:
+
+- Prática de PHP  
+- Manipulação de banco MySQL  
+- Sistema de login  
+- Organização de páginas e categorias  
+- Desenvolvimento de layout básico  
